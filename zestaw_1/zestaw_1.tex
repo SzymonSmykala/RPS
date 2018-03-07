@@ -67,8 +67,7 @@ Zakładamy ze dla drugiej litery nadaje sie 32. \\
 Ilosc roznych par imie-nazwisko, które maja dowolne pierwsze dwie litery: (25 \cdot 32) \cdot (25 \cdot 32) = 640,000. \\
 Jesli w Krakowie mieszka przynajmniej 640,001 osób, to z podstawowej zadady zliczania wynika, ze przynajmniej 2 osoby maja 2 takie same pierwsze litery imienia i nazwiska. \\
 Podobno w Krakowie jest 754,056 mieszkanców. \\
-\\
-
+\medskip
 \noindent{\bf Zad. 2 (KO)}
 \medskip
 
@@ -79,6 +78,16 @@ Czyli dla n osob prawdopodobieństwo ze przynajmniej 2 osoby maja wspolne urodzi
 \[P = \frac{1}{365} + \frac{2}{365} + \frac{3}{365} + ... + \frac{n - 1}{365} = \frac{n\cdot(n-1)}{365}\]
 Jesli P > 50\%, to n > 23.
 \medskip
+
+\noindent{\bf Zad. 3 (IS)}
+\medskip
+
+Mamy za zadanie wybrać k elementów spośród n elementowego zbioru. Pierwszy element możemy wybrać na n sposobów, drugi na (n - 1) sposobów, ... , i ostatni na (n - k - 1) sposobów. W taki sposób otrzymamy liczbę wszystkich permutacji zbioru k, z racji tego musimy wynik podzielić przez liczbę permutacji zbioru k - k!.\\
+Otrzymujemy wynik:\\
+\[\frac{n\cdot(n-1)\cdot...\cdot(n-k-1)}{k!} = \frac{n!}{k!\cdot(n-k)!}={n \choose k}\]
+
+\medskip
+
 
 \noindent{\bf Zad. 4 (SS)}
 \medskip
@@ -197,6 +206,16 @@ Jest równe liczbie surjekcji z $\big\{1, 2, .., n \big\}$ do $\big\{1, 2, .., r
 \noindent{\bf Zad. 12 (SS)}
 \medskip
 \[{5\choose 2} {6\choose 2} {4\choose 3}\]
+
+\noindent{\bf Zad. 13 (IS)}
+\medskip
+\[{n\choose k} & & \text{ to jest ilosc sposobow wyboru k elementowego podzbioru ze zbioru n elementowego}\]
+Zamiast wybierać elementy, które należą do zbioru mozemy rowniez wybrac elementy, ktore nie beda nalezec do zbioru k, ilosc takich sposobow jest rowna. Zatem musimy wybrac (n - k) elementów, które nie będa należec do zbioru k. Ilosc tych sposobow wynosi 
+\[{n \choose n-k}\]
+Zatem zachodzi rownosc:
+\[{n\choose k}={n \choose n-k}\] 
+
+\medskip
 
 \noindent{\bf Zad. 14 (JK)}
 \medskip
