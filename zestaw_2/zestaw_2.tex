@@ -69,4 +69,26 @@ Wyróżnioną kulę możemy wybrać na 1 sposób, pozostałe na ${n-1\choose k-1
 
 $P=\frac{{n-1\choose k-1}}{{n\choose k}}=\frac{\frac{(n-1)!}{(k-1)!\cdot(n-k)!}}{\frac{n!}{k!\cdot(n-k)!}}=\frac{k}{n}$
 
+\medskip
+\noindent{\bf Zad. 2 (PGo)}
+\medskip
+
+Losowy dobór oznacza tyle możliwości umieszczenia w pokojach:
+
+$|\Omega|={40\choose 2}\cdot{38\choose 2}\cdot...\cdot{2\choose 2}=\frac{40!}{2^{20}}$
+
+Ilość umieszczeń w pokojach osobno księży, osobno zakonnic:
+
+$|A|=\left({20\choose 2}\cdot{18\choose 2}\cdot...\cdot{2\choose 2}\right)^{2}\cdot\frac{20!}{10!^2}=\frac{20!^3}{2^{20}\cdot10!^2}$
+
+Czynnik $\frac{20!}{10!^2}$ odpowiada za "wymieszanie pokoi".
+
+$P(A)=\frac{20!^3}{40!\cdot10!^2}\approx0,00013\%$
+
+Ilość takich umieszczeń w pokojach, że występuje dokładnie 2i mieszanych par:
+
+$|B|=\left({20-2i\choose 2}\cdot{18-2i\choose 2}\cdot...\cdot{2\choose 2}\right)^{2}\cdot\left({4i\choose 2}\cdot{4i-2\choose 2}\cdot...\cdot{2\choose 2}\right)\cdot\frac{10!}{2i!\cdot(10-i)!^2}=\frac{(20-2i)!^2\cdot4i!\cdot10!}{2^{20}\cdot2i!\cdot(10-i)!^2}$
+
+$P(B)=\frac{\frac{(20-2i)!^2\cdot4i!\cdot10!}{2^{20}\cdot2i!\cdot(10-i)!^2}}{\frac{40!}{2^{20}}}=\frac{(20-2i)!^2\cdot4i!\cdot10!}{40!\cdot2i!\cdot(10-i)!^2}$
+
 \end{document}
