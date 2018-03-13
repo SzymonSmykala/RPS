@@ -91,4 +91,28 @@ $|B|=\left({20-2i\choose 2}\cdot{18-2i\choose 2}\cdot...\cdot{2\choose 2}\right)
 
 $P(B)=\frac{\frac{(20-2i)!^2\cdot4i!\cdot10!}{2^{20}\cdot2i!\cdot(10-i)!^2}}{\frac{40!}{2^{20}}}=\frac{(20-2i)!^2\cdot4i!\cdot10!}{40!\cdot2i!\cdot(10-i)!^2}$
 
+\medskip
+\noindent{\bf Zad. 5 (PGa)}
+\medskip
+
+x - godzina, w której zgłasza się pierwszy proces
+
+y - godzina, w której zgłasza się drugi proces
+
+$x,y \in [10,12]$
+
+$|x-y|\le\frac{10}{60}$ - warunek zajścia awarii (zdarzenia A)
+
+Skalujemy przedział do [0,1] i rozwiązujemy powyższą nierówność:
+
+$x-y\le\frac{10}{120} \ \wedge \ x-y\ge-\frac{10}{120}$
+
+$x\le y+\frac{1}{12} \ \wedge \ x\ge y-\frac{1}{12}$
+
+W tym wypadku, do uzyskania prawdopodobieństwa zajścia awarii wystarczy policzyć pole figury znajdującej się między powyższymi prostymi ograniczonymi przez kwadrat zbudowany na podstawie przeskalowanego przedziału czasowego.
+
+Najłatwiej zrobić to odejmując od pola kwadratu (1x1) dwa trójkąty stworzone przez te proste
+
+$P(A)=1\cdot1-2\cdot(\frac{1}{2}\cdot(1-\frac{1}{12})^{2})=1-2\cdot\frac{1}{2}\cdot(\frac{11}{12})^{2}=1-\frac{121}{144}=\frac{23}{144}$
+
 \end{document}
