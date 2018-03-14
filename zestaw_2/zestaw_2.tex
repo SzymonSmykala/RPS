@@ -92,6 +92,18 @@ $|B|=\left({20-2i\choose 2}\cdot{18-2i\choose 2}\cdot...\cdot{2\choose 2}\right)
 $P(B)=\frac{\frac{(20-2i)!^2\cdot4i!\cdot10!}{2^{20}\cdot2i!\cdot(10-i)!^2}}{\frac{40!}{2^{20}}}=\frac{(20-2i)!^2\cdot4i!\cdot10!}{40!\cdot2i!\cdot(10-i)!^2}$
 
 \medskip
+\noindent{\bf Zad. 4 (VB)}
+\medskip
+
+Przyporządkowanie mężczyznom kapeluszy jest permutacją $p(n)$, gdzie $n$-indeks osoby, a $p(n)$-indeks kapelusza. \\
+Ilosc permutacji n-elementowych jest $n!$. \\
+Ilosc permutacji bez punktów stałych (czyli żaden meżczyzna nie ma swojego kapelusza) wynosi ${!n} = {n!}\cdot\sum_{i=1}^{n} \frac{(-1)^{i}}{i!}$. \\
+Prawdopodobieństwo zdarzenia, że żaden kapelusz nie trafi do wlaściwej osoby wynosi
+\[\frac{{n!}\cdot\sum_{i=1}^{n} \frac{(-1)^{i}}{i!}}{n!} = \sum_{i=1}^{n} \frac{(-1)^{i}}{i!}\]
+\\
+\[\lim_{n\to\infty} \frac{!n}{n!} = \frac{1}{e} = 0,3679...\]
+
+\medskip
 \noindent{\bf Zad. 5 (PGa)}
 \medskip
 
