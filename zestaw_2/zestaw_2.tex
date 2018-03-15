@@ -92,6 +92,24 @@ $|B|=\left({20-2i\choose 2}\cdot{18-2i\choose 2}\cdot...\cdot{2\choose 2}\right)
 $P(B)=\frac{\frac{(20-2i)!^2\cdot4i!\cdot10!}{2^{20}\cdot2i!\cdot(10-i)!^2}}{\frac{40!}{2^{20}}}=\frac{(20-2i)!^2\cdot4i!\cdot10!}{40!\cdot2i!\cdot(10-i)!^2}$
 
 \medskip
+
+\noindent{\bf Zad. 3 (VB)}
+\medskip
+
+a) Dla dowolnego więznia szansa znalezc swoj numer wynosi $\frac{50}{100} = \frac{1}{2}$. To dla 100 wiezniow: \\
+\[\frac{1}{2^{100}} = 7.8886091e^{-31}\]
+b) Założmy, ze relacja szufladka-numerek jest permutacja. Permutacja rozklada sie na cykle. Jesli numerek więznia nalezy do cyklu o dlugosci <= 50, czyli więzien bedzie musial sprawdzic co najwyzej 50 komurek, to on znajdzie swoj numerek. Jesli numerek więznia znajdzie sie w cyklu o dlugosci > 50, to wszyscy umierają. Czyli prawdopodobientwo sukcesu danej strategii jest rowne prawdopodobieństwu wystąpienia cyklu o dlugosci > 50 w 100-elementowym zbiorze numerków.\\
+Ilosc roznych cykli o dlugosci k dla zbioru n-elementow wynosi:\\
+\[{n \choose k}\cdot(k-1)!\cdot(n-k)! = \frac{n!}{k}\]
+Wybieramy k elementów na ${n \choose k}$ sposobow, k elementow w cyklu możemy ustawic na $(k-1)!$ sposobów, a reszte elementów nie należacych do cyklu na $(n-k)!$ sposobów.\\
+Poniewaz ogolnie mozemy poukladac numerki na $n!$ sposobow, to prawdopodobieństwo wystąpienia cyklu o dlugosci k wynosi:
+\[\frac{n!}{k\cdot(n!)} = \frac{1}{k}\]
+Dla naszego zbioru 100 elementow mozemy miec cykle o dlugosci 51, 52, ... 99, 100.\\
+Czyli w koncu prawdopodobieństwo ze taki cykl nie pojawi sie w permutacji wynosi:
+\[1 - \frac{1}{51} - \frac{1}{52} - ... - \frac{1}{100} = 0.307\]
+
+\medskip
+  
 \noindent{\bf Zad. 4 (VB)}
 \medskip
 
