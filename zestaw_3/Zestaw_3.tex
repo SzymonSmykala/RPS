@@ -119,7 +119,52 @@ Prawdopodobienstwo ze informacja nie dojdze do celu:\\
 P(E \cap (A \cup B \cup (C \cap D)))=P(E)P(A \cup B \cup (C \cap D))=\\=P(E)(P(A)+P(B)+P(C \cap D)-P(A \cap B)-P(A\cap (C \cap D))-P(B\cap (C \cap D))+P(A \cap B \cap (C \cap D)))=\\=P(E)(P(A)+P(B)+P(C)P(D)-P(A)P(B)-P(A)P(C)P(D)-P(B)P(C)P(D)+P(A)P(B)P(C)P(D))=0.01\cdot (0.05+0.1+0.05\cdot 0.01-0.05 \cdot 0.1-0.05\cdot 0.05\cdot 0.01-0.1\cdot 0.05\cdot 0.01+0.05\cdot 0.1\cdot 0.05\cdot 0.01)=0.001454275
 Odpowiedz to: 1-0.001454275=0.998545725
 
+\medskip
+\noindent{\bf Zad. 8 (MK)}
+\medskip
 
+A - moduł A zawiera błędy
+
+B - moduł B zawiera błędy
+
+AB - oba moduły zawierają błędy
+
+$P(A) = 0.2$
+$P(B) = 0.4$
+
+wydarzenia A i B są od siebie niezależne
+
+$P(AB) = P(A) \cdot P(B) = 0.2 \cdot 0.4 = 0.08$
+
+AwA - awaria wywołana błędem w samym A
+
+AwB - awaria wywołana błędem w samym B
+
+AwAB - awaria wywołana wadliwościa obu modułów
+
+$P(AwA) = 0.5$
+
+$P(AwB) = 0.8$
+
+$P(AwAB) = 0.9$
+
+moduł A był wadliwy i wywołał awarię:
+
+$P(A) \cdot P(AwA) = 0.1$
+
+moduł B był wadliwy i wywołał awarię:
+
+$P(B) \cdot P(AwB) = 0.32$
+
+oba moduły były wadliwe i nastąpiła awaria:
+
+$ P(AB) \cdot P(AwAB) = 0.08 \cdot 0.9 = 0.072$
+
+zatem:
+
+$\frac{0.072}{0.1 + 0.32 + 0.072} = \frac{0.072}{0.492} = 0.146$
+
+Odpowiedź: 0.146
 
 \medskip
 
