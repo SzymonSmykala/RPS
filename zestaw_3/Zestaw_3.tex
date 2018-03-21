@@ -192,7 +192,12 @@ Więc, lepiej przyjąć strategie 1).
 
 
 \noindent{\bf Zad. 10 (SS)} \\
-$\sum_{i=1}^{n-k} \frac{-1^i}{i!} \cdot k!$
+Wybieramy k mężczyzn, do których trafi ich kapulesz (k punktów stałych permutacji): ${n}\choose{k}$\\
+Wybieramy n - k mężczyzn do których nie trafi ich kapelusz:\\ $\sum_{i=0}^{n-k} {{n-k}\choose{i}}  \cdot (n-k-i)! \cdot (-1)^{i-1} $ 
+
+P =  $  \frac{{{n}\choose{k}} \cdot{\sum_{i=0}^{n-k} {{n-k}\choose{i}}  \cdot (n-k-i)! \cdot (-1)^{i-1}}  }{n!} $
+
+
 
 
 \medskip
