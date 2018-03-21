@@ -169,11 +169,23 @@ Odpowiedź: 0.146
 \medskip
 
 
-\noindent{\bf Zad. 9 (SS)} 
+\noindent{\bf Zad. 9 (SS)} \\
 
+1) Strategia: liczymy na to, że ostatnia karta to as pik. \\
+Prawdopodobieństwo, że w ostatnia karta to as pik wynosi:$ \frac{1}{n}\quad$ \\
+\\ 
+2) Strategia: liczymy na to, że kolejna karta to as pik. 
+Więc:\\
+$E_{1} =  \frac{1}{n + 1 - 1}\quad$ \\
+$E_{2} = \frac{1}{n + 1 - 2}\quad$ \\
+...\\
+$E_{n} = \frac{1}{n + 1 - n}\quad$ \\ \\
+Z reguły łańcuchowej: \\
+P(E_{1}E_{2}...E_{N}) = P(E_{1}) \cdot P(E_{2}| E_{1}) \cdot P(E_{3}|E_{1}E_{2}) \cdot ... \cdot P(E_{n}|E_{1}...E_{n-1})\\
+$P(E_{1}E_{2}...E_{N}) = \frac{1}{n} \cdot \frac{\frac{1}{n-1}}{\frac{1}{n}} \cdot ... \cdot \frac{\frac{n}{n}}{P(E_{1}...E_{n-1})} $
 
-P(E_{1}E_{2}...E_{N}) = P(E_{1}) * P(E_{1}) \cdot P(E_{3}|E_{1}E_{2} \cdot ... \cdot P(E_{n}|E_{1}...E_{n-1})
-
+$ P(E_{1}E_{2}...E_{N}) < \frac{1}{n}$
+Więc, lepiej przyjąć strategie 1).
 \medskip
 
 
