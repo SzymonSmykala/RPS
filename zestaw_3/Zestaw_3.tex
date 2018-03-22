@@ -106,14 +106,51 @@ $P(E) = \frac{P(C)}{P(C)+(P(D)}$ - szansa na to, aby moduł wadliwy był po insp
 
 $\frac{0.01}{0.25} = 0.04$
 
+\medskip
+\noindent{\bf Zad. 5 (IS)}
+\medskip
 
+a)
+\[\frac{\frac{(2n-1)!}{n!\cdot(n-1)!}}{2^{2n}}\]
+b)
+\[\frac{\frac{(b_{1}+b_{2}+r_{1}+r_{2}-1)!}{(b_{1}+b_{2})!\cdot(r_{1}+r_{2})!}}{2^{b_{1}+b_{2}+r_{1}+r_{2}}} \]
+\newpage
+\medskip
+\noindent{\bf Zad. 6 (IS)}
+\medskip
+
+Klasyczny problem Monty Halla psychopatycznie sprowadzony do zabijania wiezniow...
+
+Musimy udowodnić, że niezależnie od tego co mówi więzień, szansa na przezycie to zawsze $\frac{1}{3}$
+
+Zalozmy ze A bedzie oznaczało sytuacje, kiedy wiezien 1 jest ulaskawiony, a B bedzie oznaczac sytuacje kiedy straznik powie, że inny wiezien bedzie skazany.
+
+
+Z twierdzenia Bayesa:
+
+\[{\displaystyle {\mathsf {P}}(A\mid B)={\frac {{\mathsf {P}}(B\mid A)\,{\mathsf {P}}(A)}{{\mathsf {P}}(B\mid A){\mathsf {P}}(A)+{\mathsf {P}}(B\mid A^{\prime }){\mathsf {P}}(A^{\prime })}}}.	\]
+
+
+
+$P(A)$ to prawdopodobienstwo z jakim ulaskawiony jest pierwszy wiezen bez zadnych informacji - $\frac{1}{3}$
+
+$P(A')$ to prawdopodobiensto z jakim pierwszy wiezien umiera (bez zadnych informacji) - $\frac{2}{3}$
+
+$P(B \mid A)$ to prawdopodobienstwo ze straznik powie, ze inny wiezen umiera, jesli pierwszy przezywa. Straznik zawsze mowi ze inny umiera - prawdopodobienstwo wynosi 1
+
+$P(B \mid A')$ to prawdopodobienstwo ze straznik powie, ze inny wiezen umiera, jesli pierwszy tez umrze. Straznik zawsze mowi ze inny umiera - prawdopodobienstwo wynosi 1
+
+Podstawiajac wszystko do wzoru:
+
+\[P(A | B) = \frac{1 \cdot \frac{1}{3}}{1 \cdot \frac{1}{3} + 1 \cdot \frac{2}{3}} = \frac{1}{3}  \]
+ 
 \medskip
 \noindent{\bf Zad. 7 (MM)}
 \medskip
 Prawdopodobienstwo ze informacja nie dojdze do celu:\\
 P(E \cap (A \cup B \cup (C \cap D)))=P(E)P(A \cup B \cup (C \cap D))=\\=P(E)(P(A)+P(B)+P(C \cap D)-P(A \cap B)-P(A\cap (C \cap D))-P(B\cap (C \cap D))+P(A \cap B \cap (C \cap D)))=\\=P(E)(P(A)+P(B)+P(C)P(D)-P(A)P(B)-P(A)P(C)P(D)-P(B)P(C)P(D)+P(A)P(B)P(C)P(D))=0.01\cdot (0.05+0.1+0.05\cdot 0.01-0.05 \cdot 0.1-0.05\cdot 0.05\cdot 0.01-0.1\cdot 0.05\cdot 0.01+0.05\cdot 0.1\cdot 0.05\cdot 0.01)=0.001454275
 Odpowiedz to: 1-0.001454275=0.998545725
-\newpage
+
 \medskip
 \noindent{\bf Zad. 8 (MK)}
 \medskip
