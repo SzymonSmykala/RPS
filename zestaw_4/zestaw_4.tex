@@ -77,12 +77,30 @@ b) Prawdopodobieństwa wynoszą:
 \item $P\left\lbrace X=n-1 \right\rbrace=\left(1-p\right)^{n-2}\cdot p$
 \item $P\left\lbrace X=n \right\rbrace=\left(1-p\right)^{n-1}$
 \end{itemize}
-c) Można to udowodnić indukcyjnie. 
+c) Można to udowodnić indukcyjnie.
 
-Dla $n=1$ - $P\left\lbrace X=1 \right\rbrace=1$ 
+Dla $n=1$ - $P\left\lbrace X=1 \right\rbrace=1$
 
 Dla $n=2$ - $P\left\lbrace X=1 \right\rbrace=p$, $P\left\lbrace X=2 \right\rbrace=1-p$. Ich suma jest równa 1.
 
 Zakładamy, że dla $n=k$ suma prawdopodobieństw wynosi $\sum\limits_{j=1}^{k-1}\left(1-p\right)^{j-1}\cdot p+\left(1-p\right)^{k-1}=1$.
-Zatem dla $n=k+1$ wynosi $\sum\limits_{j=1}^{k}\left(1-p\right)^{j-1}\cdot p+\left(1-p\right)^{k}=1+\left(1-p\right)^{k-1}\cdot \left( p-1\right)+\left(1-p\right)^{k}=1$. 
+Zatem dla $n=k+1$ wynosi $\sum\limits_{j=1}^{k}\left(1-p\right)^{j-1}\cdot p+\left(1-p\right)^{k}=1+\left(1-p\right)^{k-1}\cdot \left( p-1\right)+\left(1-p\right)^{k}=1$.
+
+\medskip
+\noindent{\bf Zad. 2 (VB)}
+\medskip
+
+3 białe (+1\$), 3 czerwone(-1\$), 5 czarnych(+0\$). \\
+Losujemy 3 kule, to żeby całkowita suma byla dodatnia, jest 3 opcji: \\
+1) 1\$: 1b+2czar = ${3 \choose 1} \cdot {5 \choose 2}$;  2b+1czer = ${3 \choose 2} \cdot {3 \choose 1}$; \\
+
+2) 2\$: 2b+1czar = ${3 \choose 2} \cdot {5 \choose 1}$; \\
+
+3) 3\$: 3b = ${3 \choose 3}$; \\
+
+Ilość wszystkich mozliwych kombinacji wynosi ${11 \choose 3}$. \\
+Prawdopodobieństwo wygranej wynosi:
+\[\frac{{3 \choose 1} \cdot {5 \choose 2} + {3 \choose 2} \cdot {3 \choose 1} + {3 \choose 2} \cdot {5 \choose 1} + 1}{{11 \choose 3}}\]
+
+\medskip
 \end{document}
