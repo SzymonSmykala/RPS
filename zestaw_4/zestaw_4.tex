@@ -1,0 +1,87 @@
+\documentclass[fleqn]{article}
+
+\usepackage[T1]{fontenc}
+
+\usepackage{amscd}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{amsthm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[document]{ragged2e}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{cancel}
+\usepackage{polski}
+\usepackage{calligra}
+\usepackage{enumerate}
+
+\def\B{\mathcal{B}}
+\def\E{\mathcal{E}}
+\def\F{\mathcal{F}}
+\def\G{\mathcal{G}}
+\def\O{\mathcal{O}}
+\def\Q{\mathcal{Q}}
+\def\P{\mathcal{P}}
+\def\C{\mathcal{C}}
+\def\U{\mathcal{U}}
+\def\uni{\mathrm{unif}}
+\def\Code{\mathrm{Code}}
+\def\diag{\mathrm{diag}}
+\def\Mah{\mathrm{Mah}}
+\def\N{\mathbb{N}}
+\def\Z{\mathbb{Z}}
+\def\R{\mathbb{R}}
+\def\Nor{\mathcal{N}}
+\def\I{\mathrm{I}}
+\def\f{\mathrm{f}}
+\def\m{\mathrm{m}}
+
+% definicje przydatnych potem komend
+
+\def\C{{\mathbb C}}
+\def\Z{{\mathbb Z}}
+\def\N{{\mathbb N}}
+\def\R{{\mathbb R}}
+\def\Q{{\mathbb Q}}
+
+\def\e{\varepsilon}
+\def\w{\omega}
+\def\dom{\mathrm{dom}}
+
+\begin{document}
+
+\title{Zadania z Rachunku Prawdopodobieństwa \\ Ćwiczenia .. z dnia ...}
+\date{}
+\medskip
+\noindent{\bf Zad. 1 (PGo)}
+\medskip
+
+a) X może przyjmować wartości od 1 do n
+
+b) \begin{itemize}
+\item $P\left\lbrace X=1 \right\rbrace=p$
+\item $P\left\lbrace X=2 \right\rbrace=\left(1-p\right)\cdot p$
+
+...
+
+\item $P\left\lbrace X=i \right\rbrace=\left(1-p\right)^{i-1}\cdot p$
+
+...
+
+\item $P\left\lbrace X=n-1 \right\rbrace=\left(1-p\right)^{n-2}\cdot p$
+\item $P\left\lbrace X=n \right\rbrace=\left(1-p\right)^{n-1}$
+\end{itemize}
+c) Można to udowodnić indukcyjnie. 
+
+Dla $n=1$ - $P\left\lbrace X=1 \right\rbrace=1$ 
+
+Dla $n=2$ - $P\left\lbrace X=1 \right\rbrace=p$, $P\left\lbrace X=2 \right\rbrace=1-p$. Ich suma jest równa 1.
+
+Zakładamy, że dla $n=k$ suma prawdopodobieństw wynosi $\sum\limits_{j=1}^{k-1}\left(1-p\right)^{j-1}\cdot p+\left(1-p\right)^{k-1}=1$.
+Zatem dla $n=k+1$ wynosi $\sum\limits_{j=1}^{k}\left(1-p\right)^{j-1}\cdot p+\left(1-p\right)^{k}=1+\left(1-p\right)^{k-1}\cdot \left( p-1\right)+\left(1-p\right)^{k}=1$. 
+\end{document}
