@@ -103,4 +103,33 @@ Prawdopodobieństwo wygranej wynosi:
 \[\frac{{3 \choose 1} \cdot {5 \choose 2} + {3 \choose 2} \cdot {3 \choose 1} + {3 \choose 2} \cdot {5 \choose 1} + 1}{{11 \choose 3}}\]
 
 \medskip
+\noindent{\bf Zad. 6 (Spisał: PGo)}
+\medskip
+
+$Var(X)=E(X^2)-E^2(X)$
+
+$Var\left( aX+b\right) =E\left(\left( aX+b\right)^2\right) - E^2\left( aX+b \right)=E\left( a^2X^2+2abx+b^2\right) -\left(aE\left( X\right)+b\right)^2=a^2E\left(X^2\right)+2abE\left(X\right)-a^2E^2\left(X\right)-2abE\left(X\right)-b^2=a^2\cdot\left(E\left(X^2\right)-E^2\left(X\right)\right)=a^2Var\left(X\right)$
+
+\medskip
+\noindent{\bf Zad. 7 (Spisał: PGo)}
+\medskip
+
+$p$ - prawdopodobieństwo, że śrubka jest wadliwa
+
+$n$ - ilość śrubek w pakiecie
+
+$X$ - zmienna losowa oznaczająca ilość wadliwych śrubek
+
+$P\left\lbrace X=0\right\rbrace={n\choose 0}\cdot p^0\cdot\left(1-p\right)^n=0,9044$
+
+$P\left\lbrace X=1\right\rbrace={n\choose 1}\cdot p^1\cdot\left(1-p\right)^{n-1}=0,0914$
+
+Prawdopodobieństwo tego, że nie będzie zwrotu pieniędzy wynosi: $1-\left(P\left\lbrace X=0\right\rbrace + P\left\lbrace X=1\right\rbrace \right)=0,0042$
+
+\medskip
+\noindent{\bf Zad. 8 (Spisał: PGo)}
+\medskip
+
+$\sum_{i=0}^{\infty}P\left\lbrace X=i\right\rbrace=e^{-\lambda}\cdot\sum_{i=0}^{\infty}\frac{\lambda^i}{i!}=e^{-\lambda}\cdot e^\lambda=1$
+
 \end{document}
